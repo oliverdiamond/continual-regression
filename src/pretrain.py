@@ -78,7 +78,7 @@ def main():
     parser.add_argument("--num_epochs", default=4000, type=int)
     args = parser.parse_args()
 
-    ckpt_dir = Path(f"checkpoints/pretrained_eta_{args.learning_rate}")
+    ckpt_dir = Path(f"checkpoints/pretrained_eta_{args.learning_rate:.0E}")
 
     if ckpt_dir.exists():
         print(f"{ckpt_dir} exists, skipping pretraining...")
