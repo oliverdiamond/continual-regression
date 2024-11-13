@@ -1,3 +1,4 @@
+import jax.numpy as jnp
 from flax import nnx
 
 
@@ -22,4 +23,5 @@ class BaseNetwork(nnx.Module):
         for linear_hidden in self.linear_hiddens:
             x = nnx.relu(linear_hidden(x))
         x = self.linear_output(x)
+        x = jnp.squeeze(x)
         return x
