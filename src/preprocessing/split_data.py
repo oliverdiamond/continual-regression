@@ -1,7 +1,7 @@
 '''
 Train/Test/Val split for Nov-Dec data
 Before running, download month_all.hdf5 from
-____
+https://drive.google.com/drive/folders/1x90SvmZ9gFQEhD7qiKve7eOwhDnkZN9L?usp=sharing
 and place in continual-regression/data/
 '''
 
