@@ -1,3 +1,7 @@
+# Data dir (files too large to push)
+data/
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
