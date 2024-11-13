@@ -80,6 +80,9 @@ def main():
 
     ckpt_dir = Path(f"checkpoints/pretrained_eta_{args.learning_rate}")
 
+    if ckpt_dir.exists():
+        print(f"{ckpt_dir} exists, skipping pretraining...")
+
     model = BaseNetwork(rngs=nnx.Rngs(0))
     optimizer = nnx.Optimizer(
         model,
